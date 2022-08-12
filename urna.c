@@ -22,7 +22,7 @@ getVotes(unsigned int **votes, size_t i) {
 }
 
 void
-getWinner(unsigned int **votes, unsigned int *winner) {
+getWinner(unsigned int *winner) {
   *winner = rand() % BRAZIL_POPULATION;
 }
 
@@ -35,7 +35,7 @@ main(void)
   unsigned int winner;
 
   getVotes(&votes, 0);
-  getWinner(&votes, &winner);
+  getWinner(&winner);
 
   printf("Eleito: %d!", *(votes + winner));  
 
