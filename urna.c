@@ -6,7 +6,7 @@
 
 void
 getVotes(unsigned int **votes, size_t i) {
-  if (i == BRAZIL_POPULATION - 2) return;
+  if (i == BRAZIL_POPULATION) return;
   unsigned int vote;
 
   printf("Numero do seu candidato: ");
